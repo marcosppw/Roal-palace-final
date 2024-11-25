@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link href="Img/logo.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Salón de eventos para bodas, conferencias y celebraciones especiales">
+    <title>Salón de Eventos</title>
+    <!-- Importación de la fuente Bodoni Moda -->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a class="titulo" href="">ROYALE PALACE</a>
+        </div>
+        <nav>
+            <ul>
+                <li class="lista"><a href="#bienvenida">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#galeria">Galería</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="bienvenida" class="hero">
+        <div class="hero-text">
+            <h2>¡Celebra con nosotros!</h2>
+            <p>Tu evento, nuestro compromiso. El lugar perfecto para bodas, cumpleaños, y cualquier celebración.</p>
+            <a href="#contacto" class="btn">Reserva Ahora</a>
+        </div>
+    </section>
+
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="service-box">
+            <div class="service-item">
+                <h3>Bodas</h3>
+                <p>Organiza la boda de tus sueños con nosotros.</p>
+            </div>
+            <div class="service-item">
+                <h3>Cumpleaños</h3>
+                <p>Un lugar ideal para fiestas de cumpleaños.</p>
+            </div>
+            <div class="service-item">
+                <h3>Conferencias</h3>
+                <p>Espacio moderno para eventos corporativos y conferencias.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria">
+        <h2>Galería</h2>
+        <div class="gallery">
+            <img src="Img/2.jpg" alt="Evento 1">
+            <img src="Img/3.jpg" alt="Evento 2">
+            <img src="Img/4.jpg" alt="Evento 3">
+            <img src="Img/5.jpg" alt="Evento 4">
+            <img src="Img/6.jpg" alt="Evento 5">
+            <img src="Img/7.jpg" alt="Evento 6">
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna pregunta? ¡Estamos aquí para ayudarte!</p>
+        <form action="submit_form.php" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit" class="btn">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Salón de Eventos | Todos los derechos reservados</p>
+    </footer>
+</body>
+</html>
