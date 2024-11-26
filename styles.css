@@ -28,6 +28,7 @@ header {
     align-items: center;
     position: fixed;
     width: 100%;
+    z-index: 2;
     
 }
 .titulo{
@@ -68,14 +69,30 @@ header nav ul li a:hover{
 
 /* Sección hero */
 .hero {
-    background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(img/8.jpg);
-    height: 800px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    color:var(--color-p)
+   position: relative;
+   height: 100vh;
+   width: 100vw;
+   background-size: cover;
+   background-position: center;
     
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero .hero-text {
+    position: relative;
+    z-index: 1;
+    color: var(--color-p);
+    text-align: center;
+    padding: center;
+    top: 300px;
 }
 
 .hero-text h2 {
@@ -157,15 +174,18 @@ header nav ul li a:hover{
 }
 
 .gallery {
+    width: 100%;
+    height: 100%;
     display: flex; 
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
 }
 
 .gallery img {
-    width: 30%;
-    height: 200px;
+    width: 300px;
+    height: 300px;
+    margin: 20px;
     object-fit: cover;
     border-radius: 8px;
 }
