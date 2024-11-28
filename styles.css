@@ -267,13 +267,66 @@ footer {
     font-size: 22px;
 }
 
-@media(max-width:600px){
+@media(max-width:768px) {
     header nav ul {
         flex-direction: column;
     }
 
-    header{
+    header {
         display: flex;
         flex-direction: column;
+    }
+
+    .hero {
+        height: 120vh;
+    }
+
+    .h3{
+        font-size: 20px;
+    }
+
+    .pe{
+        font-size: 20px;
+    }
+
+    .pe1{
+        font-size: 23px;
+    }
+
+    #galeria{
+        height: 2359px;
+    }
+
+    .service-box{
+        flex-direction: column;
+    }
+
+    .service-item{
+        width: 100%;
+        height: 190%;
+    }
+
+    #servicios{
+        height: auto;
+    }
+
+    .lis{
+        font-size: 20px;
+    }
+
+    #contacto{
+        height: 800px;
+    }
+    form label{
+        font-size: 25px; 
+    }
+
+    form input ,textarea {
+        font-size: 25px;
+    }
+
+    form button{
+        padding: 16px 1px;
+        font-size: 25px;
     }
 }
